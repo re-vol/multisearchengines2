@@ -16,9 +16,9 @@ h1 {color:blue;font-size:90px;text-align:center;padding-top:50px;}
 h2 {font-size:90px;text-align:center;padding-top:50px;}
 p{font-size:35px;text-align:center;padding-bottom:80px;}
 form{text-align:center;}
-h4{position: absolute;
-   right: 0;
-   bottom: 0;}
+h4{text-align:center;
+   padding-top:50px
+   }
 .btn-search{
   display: inline-block;
   padding: 0.5em 1em;
@@ -33,12 +33,7 @@ h4{position: absolute;
    text-align:center;
    ;
  }
- ol{position: absolute;
-   font-size:35px;
-   right: 0;
-   bottom: 0;
-   list-style:none
-   }
+ 
 
 
  }
