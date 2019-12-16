@@ -14,11 +14,11 @@ def form6():
 
 @app.route('/secondpage',methods=["GET"])
 def hello_world6():
-    return render_template('index9.html',title="Multi search engines",message="↓ Select your SNS")
+    return render_template('index9.html',title="Multi search engines(SNS)",message="↓ Select your SNS")
 
 @app.route('/secondpage',methods=["POST"])
 def form7():
-    return render_template('index9.html',title2="Multi search engines",message="↓ search again ?")
+    return render_template('index9.html',title2="Multi search engines(SNS)",message="↓ search again ?")
 
 
 
