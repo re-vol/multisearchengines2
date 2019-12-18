@@ -1,0 +1,39 @@
+/* スマートフォン用CSS */
+@media screen and (max-width: 640px) {
+
+img{
+max-width: 100%;
+height: auto;
+width /***/:auto;
+}
+
+/* ここから通常のCSS */
+・・・
+・・・
+
+body {margin:10px;}
+h1 {color:blue;font-size:90px;text-align:center;padding-top:50px;}
+h2 {font-size:90px;text-align:center;padding-top:50px;}
+p{font-size:35px;text-align:center;padding-bottom:80px;}
+form{text-align:center;}
+/***h4{position: absolute;
+   right: 0;
+   bottom: 0;} ***/
+
+.btn-search{
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-align:center;
+  text-decoration: none;
+  background: #668ad8;/*ボタン色*/
+  color: #FFF;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+ }
+ .form-control{
+   text-align:center;
+   ;
+ }
+
+ }
+}/* ←CSSの一番最後に記述 */
