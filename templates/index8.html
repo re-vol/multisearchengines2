@@ -1,0 +1,97 @@
+<!doctype html>
+<!--You know who I am-->
+<html lang="ja">
+<head>
+  <title>Multi search engins</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!-- StyleSheet -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" media="(min-width: 640px)" href="{{url_for('static',filename='style_pc.css')}}">
+    <link rel="stylesheet" media="(max-width: 640px)" href="{{url_for('static',filename='style_mobile.css')}}">
+
+    <style>
+    body{
+/*    background-image:url("http://naokun.cocolog-nifty.com/photos/uncategorized/2008/10/14/ysasaka0810152.jpg"); */
+    background-image:url("http://kimono-ok.com/wp-content/uploads/2017/08/%E6%A1%9C%E4%BA%AC%E4%BA%8C%E5%B9%B4%E5%9D%82%E6%AD%B4%E5%8F%B2.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:100% auto;/*この場合は高さが自動設定*/
+    background-size:auto 100%;/*この場合は幅が自動設定*/
+    background-size: cover;
+    }
+    h1 , p {text-shadow:5px 5px 3px black;}
+    a {text-shadow: 4px 4px 10px black;
+       color:white;}
+    </style>
+</head>
+<div class="container">
+  <!--twitter-->
+  <a href="https://twitter.com/intent/tweet?text=&url=https://multisearchengines.herokuapp.com/&hashtags=Multisearchengines"
+  class="btn btn-primary mt-3" rel=”nofollow” onClick="window.open(encodeURI(decodeURI(this.href)),'twwindow','width=550, height=450, personalbar=0, toolbar=0, scrollbars=1'); return false;">Twiiter</a>
+  <h5 class="display-5  text-light ">Would you please spread if you like ?</h5>
+
+  <h1 class="display-2 font-weight-bold  text-light pt-5 pb-4">{{title}}</h1>
+  <p class="display-5 text-light pb-5 mt-5">{{message}}</p>
+
+
+<div class="form-group">
+  <form method="post" action="/">
+
+    <select   class="form-control mx-auto col mb-5" onchange="select('sel')" id="sel" style="width: 360px;" name="sel" >
+      <option value="">選択してください</option>
+      <option value="https://www.google.com/search?sxsrf=ACYBGNQ3H_FH0EJkcDs4UK9blS06G4dRoA%3A1576058296257&ei=uL3wXameD-HomAWwy5CgAw&q=">Google</option>
+      <option value="https://www.bing.com/search?q=">Bing</optiion>
+      <option value="https://duckduckgo.com/?q=">DuckDuckGo</option>
+      <option value="https://search.yahoo.co.jp/search?p=">Yahoo!</option>
+    </select>
+
+    <input type="text" class="text w-50 "  onchange="textinput(this.value)" name="send3" id="input_message" value="" style="height:43px;">
+    <input type="submit" class="btn-search " onClick="func1()"  value="検索"　style="height:35;">
+
+<!--  <a href="">
+    <button type="button" class="btn-search " onClick="func1()"  value="検索"　style="height:35;">検索</button>
+  </a> -->
+  </form>
+
+  <div id="output_message"></div>
+
+<!--  <div class="model fade" id="dlog">
+    <div class="model-dialog" role="document">
+      <div class="alert alert-primary" role="alert">
+        検索結果は新しいタブで開かれました/Search results opened in a new tab
+      </div>
+    </div>
+  <div>-->
+
+  <script language="javascript" type="text/javascript">
+    var result;
+  function select(idname){
+    var obj = document.getElementById(idname);
+    result = obj.value;
+  }
+  function func1() {
+    var input_message = document.getElementById("input_message").value;
+    input_message = result + input_message ;
+    window.open(input_message,"_blank");
+  }
+
+
+  </script>
+
+</div>
+<h3 class="text-center pt-5"><a href="/secondpage" >SNS search</h3>
+<h3 class="text-center"><a href="/forthpage" >News search</h3>
+<h3 class="text-center"><a href="/thirdpage">Web Service</h3>
+</div>
+</div>
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+</html>
