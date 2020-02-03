@@ -11,7 +11,8 @@ width /***/:auto;
 ・・・
 ・・・
 
-body {margin:10px;}
+body {margin:10px;
+      background-position: center center;}
 h1 {color:blue;font-size:90px;text-align:center;padding-top:50px;}
 h2 {font-size:90px;text-align:center;padding-top:50px;}
 p{font-size:35px;text-align:center;padding-bottom:80px;}
