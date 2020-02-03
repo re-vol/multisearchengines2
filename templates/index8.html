@@ -13,6 +13,7 @@
     <link rel="stylesheet" media="(max-width: 640px)" href="{{url_for('static',filename='style_mobile.css')}}">
 
     <style>
+@media print, screen  and (min-width: 640px) {
     body{
 /*    background-image:url("http://naokun.cocolog-nifty.com/photos/uncategorized/2008/10/14/ysasaka0810152.jpg"); */
       background-image:url("https://5b0988e595225.cdn.sohucs.com/images/20190823/5fd5f00a8ef44d309d3fb86c776d54e6.png");
@@ -28,7 +29,28 @@
     .link {/*text-shadow: 4px 4px 10px black; */
        color:black;}
   /*  .link2 {text-shadow: 4px 4px 10px black;
-       color:white;} */
+         color:white;} */　
+      
+@media screen and (max-width: 640px) {
+  body{
+
+/*  background-image:url("https://a-static.besthdwallpaper.com/si-yue-hajun-noxu-kara-baiorinnonu-nozi-kabegami-750x1334-11997_164.jpg"); */
+  background-image:url("https://mfiles.alphacoders.com/682/682702.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size:100% auto;/*この場合は高さが自動設定*/
+  background-size:auto 100%;/*この場合は幅が自動設定*/
+  background-size: cover;
+  }
+  h1{text-align:center;
+    text-shadow:8px 8px 5px black;}
+  p{color:white;
+    text-shadow:8px 8px 5px black;}
+  .link {text-shadow: 5px 5px 5px black;
+     color:white;}
+  .link2 {text-shadow: 4px 4px 10px black;
+        color:white;}
+  }
     </style>
 </head>
 <body>
