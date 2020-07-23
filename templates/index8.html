@@ -6,69 +6,78 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <!-- StyleSheet -->
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
     <link rel="stylesheet" media="(min-width: 640px)" href="{{url_for('static',filename='style_pc.css')}}">
     <link rel="stylesheet" media="(max-width: 640px)" href="{{url_for('static',filename='style_mobile.css')}}">
 
-  <style>
-@media print, screen  and (min-width: 640px) {
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!--<style>
+    ol{position: absolute;
+       font-size:35px;
+       right: 0;
+       bottom: 0;
+       list-style:none
+       }
+    </style> -->
+  
+<style>
+    @media print, screen  and (min-width: 640px) {
     body{
-      background-image:url("https://5b0988e595225.cdn.sohucs.com/images/20190823/5fd5f00a8ef44d309d3fb86c776d54e6.png"); /*ヴァイオレット*/
-/*    background-image:url("http://naokun.cocolog-nifty.com/photos/uncategorized/2008/10/14/ysasaka0810152.jpg"); */
-/*    background-image:url("https://photohito.k-img.com/uploads/photo120/user119543/b/3/b34c355f83cb2837406d97d36b4dd6d6/b34c355f83cb2837406d97d36b4dd6d6_l.jpg"); */
-/*    background-image:url("https://www.kepco.co.jp/brand/citylights/kamogawa_yuka/images/img_kamogawa_yuka.jpg"); */
-/*      background-image:url("https://www.1zoom.me/big2/642/263280-aliya06.jpg");*/
-/*      background-image:url("https://i.pinimg.com/originals/54/44/82/544482619377ee9e66a30dbf9ee4ceec.png"); */
-    background-repeat: no-repeat;
-/*    background-position: center center; */
-    background-size:100% auto;/*この場合は高さが自動設定*/
-    background-size:auto 100%;/*この場合は幅が自動設定*/
-    background-size: cover;
-    }  }
-@media screen and (max-width: 640px) {
-  body{
+    /*    background-image:url("http://naokun.cocolog-nifty.com/photos/uncategorized/2008/10/14/ysasaka0810152.jpg"); */
+        background-image:url("https://5b0988e595225.cdn.sohucs.com/images/20190823/5fd5f00a8ef44d309d3fb86c776d54e6.png");
 
-/*  background-image:url("https://a-static.besthdwallpaper.com/si-yue-hajun-noxu-kara-baiorinnonu-nozi-kabegami-750x1334-11997_164.jpg"); */
-  background-image:url("https://www.lovethispic.com/uploaded_images/107654-For-You.gif?1");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size:100% auto;/*この場合は高さが自動設定*/
-  background-size:auto 100%;/*この場合は幅が自動設定*/
-  background-size: cover;
-  }
-  h1{text-align:center;
-    text-shadow:8px 8px 5px black;}
-  p{color:white;
-    text-shadow:8px 8px 5px black;}
-  .link {text-shadow: 5px 5px 5px black;
-     color:white;}
-  .link2 {text-shadow: 4px 4px 10px black;
-        color:white;}
-  }
-    h1 , p {text-shadow:8px 8px 5px black;}
-  /*  .link {text-shadow: 5px 5px 5px black;
-       color:white;}
-    .link2 {text-shadow: 4px 4px 10px black;
-          color:white;} */
+        background-repeat: no-repeat;
+    /*    background-position: center center; */
+        background-size:100% auto;/*この場合は高さが自動設定*/
+        background-size:auto 100%;/*この場合は幅が自動設定*/
+        background-size: cover;
+        }
+        h1 {text-shadow:6px 6px 2px black;
+            text-align:right;
+            }
+        p{color: black;}
+    /*    p {text-shadow:5px 5px 3px black;} */
+        .link {/*text-shadow: 4px 4px 10px black; */
+           color:black;}
+        .link2 {/*text-shadow: 4px 4px 10px black;*/
+           color:black;} 　
+        .link3 {color:black;}
+        }
 
-    </style>
+    @media screen and (max-width: 640px) {
+      body{
+
+    /*  background-image:url("https://a-static.besthdwallpaper.com/si-yue-hajun-noxu-kara-baiorinnonu-nozi-kabegami-750x1334-11997_164.jpg"); */
+      background-image:url("https://mfiles.alphacoders.com/682/682702.jpg");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size:100% auto;/*この場合は高さが自動設定*/
+      background-size:auto 100%;/*この場合は幅が自動設定*/
+      background-size: cover;
+      }
+      h1{text-align:center;
+        text-shadow:8px 8px 5px black;}
+      p{color:white;
+        text-shadow:8px 8px 5px black;}
+      .link {text-shadow: 5px 5px 5px black;
+         color:white;}
+      .link2 {text-shadow: 4px 4px 10px black;
+            color:white;}
+      .link3 {color:white;}
+      }
+</style>
 </head>
+<body>
 <div class="container">
   <!--twitter-->
-
-</div>
-
-
   <a href="https://twitter.com/intent/tweet?text=&url=https://multisearchengines.herokuapp.com/&hashtags=Multisearchengines"
-  class="btn btn-primary mt-3 ml-5" rel=”nofollow” onClick="window.open(encodeURI(decodeURI(this.href)),'twwindow','width=550, height=450, personalbar=0, toolbar=0, scrollbars=1'); return false;">Twitter</a>
-  <a href="mailto:kazumoto58427@gmail.com?subject=Multisearchenginesについての問い合わせ&amp;body=ご記入ください" class="link2 mt-4 mr-5 float-right" rel=”nofollow” >Contact</a>
-  <h5 class="display-5 ml-5 text-light  ">Would you please spread if you like ?</h5>
+  class="btn btn-primary mt-3" rel=”nofollow” onClick="window.open(encodeURI(decodeURI(this.href)),'twwindow','width=550, height=450, personalbar=0, toolbar=0, scrollbars=1'); return false;">Twitter</a>
+  <a href="mailto:kazumoto58427@gmail.com?subject=Multisearchenginesについての問い合わせ&amp;body=ご記入ください" class="link2 mt-4  float-right" rel=”nofollow” >Contact</a>
+  <h5 class="link3 display-5   ">Would you please spread if you like ?</h5>
 
-  <h1 class="display-2 font-weight-bold  text-light pt-5 pb-4">{{title}}</h1>
-  <p class="display-5 text-light pb-5 mt-5">{{message}}</p>
+  <h1 class="display-2 text-light  pt-5 pb-4 ">{{title}}</h1>
 
+  <p class="display-5 pb-5 mt-5">{{message}}</p>
 
 <div class="form-group">
   <form method="post" action="/">
@@ -115,9 +124,9 @@
   </script>
 
 </div>
-<h3 class="text-center pt-5"><a class="link" href="/secondpage" >SNS search</h3>
-<h3 class="text-center"><a class="link" href="/forthpage" >News search</h3>
-<h3 class="text-center"><a class="link" href="/thirdpage">Web Service</h3>
+<h3 class="text-center text-dark pt-5"><a class="link" href="/secondpage" >SNS search</h3>
+<h3 class="text-center text dark "><a class="link" href="/forthpage" >News search</h3>
+<h3 class="text-center text-dark "><a class="link" href="/thirdpage">Web Service</h3>
 </div>
 </div>
 
